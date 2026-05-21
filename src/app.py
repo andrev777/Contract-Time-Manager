@@ -1,8 +1,8 @@
 import datetime
 from typing import List, Dict
-from src.models import Worker, TimeEntry, Leave, Loan, Payslip
-from src.calculations import calculate_monthly_pay, accrue_annual_leave, calculate_daily_hours
-from src.data_manager import DataManager
+from models import Worker, TimeEntry, Leave, Loan, Payslip
+from calculations import calculate_monthly_pay, accrue_annual_leave, calculate_daily_hours
+from data_manager import DataManager
 
 class ContractTimeManagerApp:
     def __init__(self):
@@ -142,56 +142,4 @@ class ContractTimeManagerApp:
             print(f"ID: {worker.worker_id}, Name: {worker.name}, Hourly Rate: R{worker.hourly_rate:.2f}, Annual Leave Accrued: {worker.accrued_annual_leave_days:.2f} days")
         print("--------------------------")
 
-    def run(self):
-        while True:
-            print("\n--- Contract Time Manager ---")
-            print("1. Add Worker")
-            print("2. Record Time Entry")
-            print("3. Record Leave")
-            print("4. Record Loan")
-            print("5. Generate Payslip")
-            print("6. List Workers")
-            print("7. Exit")
-            choice = input("Enter your choice: ")
 
-            if choice == "1":
-                worker_id = input("Enter worker ID: ")
-                name = input("Enter worker name: ")
-                rate = input("Enter hourly rate (default 28.79): ")
-                hourly_rate = float(rate) if rate else 28.79
-                self.add_worker(worker_id, name, hourly_rate)
-            elif choice == "2":
-                worker_id = input("Enter worker ID: ")
-                date_str = input("Enter date (YYYY-MM-DD): ")
-                start_time_str = input("Enter start time (HH:MM): ")
-                end_time_str = input("Enter end time (HH:MM): ")
-                self.record_time_entry(worker_id, date_str, start_time_str, end_time_str)
-                # The leave accrual is now handled directly within record_time_entry
-            elif choice == "3":
-                worker_id = input("Enter worker ID: ")
-                leave_type = input("Enter leave type (annual, sick, family): ")
-                start_date_str = input("Enter start date (YYYY-MM-DD): ")
-                end_date_str = input("Enter end date (YYYY-MM-DD): ")
-                days_taken = float(input("Enter number of days taken: "))
-                self.record_leave(worker_id, leave_type, start_date_str, end_date_str, days_taken)
-            elif choice == "4":
-                worker_id = input("Enter worker ID: ")
-                loan_amount = float(input("Enter loan amount: "))
-                start_date_str = input("Enter loan start date (YYYY-MM-DD): ")
-                repayment_schedule_str = input("Enter repayment schedule (e.g., \'YYYY-MM-DD:AMOUNT,YYYY-MM-DD:AMOUNT\'): ")
-                self.record_loan(worker_id, loan_amount, start_date_str, repayment_schedule_str)
-            elif choice == "5":
-                worker_id = input("Enter worker ID: ")
-                month_str = input("Enter month for payslip (YYYY-MM): ")
-                self.generate_payslip(worker_id, month_str)
-            elif choice == "6":
-                self.list_workers()
-            elif choice == "7":
-                print("Exiting application.")
-                break
-            else:
-                print("Invalid choice. Please try again.")
-
-if __name__ == "__main__":
-    app = ContractTimeManagerApp()
-    app.run()

@@ -1,6 +1,6 @@
 import datetime
 from typing import List
-from src.models import TimeEntry, Worker, Payslip, Leave, Loan
+from models import TimeEntry, Worker, Payslip, Leave, Loan
 
 # SA Legal Limits
 MAX_NORMAL_DAILY_HOURS = 9

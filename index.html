@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Time Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contract Time Manager</h1>
+
+        <section id="add-worker">
+            <h2>Add Worker</h2>
+            <form id="add-worker-form">
+                <input type="text" id="worker-id" placeholder="Worker ID" required>
+                <input type="text" id="worker-name" placeholder="Worker Name" required>
+                <input type="number" id="hourly-rate" placeholder="Hourly Rate (e.g., 28.79)" value="28.79">
+                <button type="submit">Add Worker</button>
+            </form>
+            <p id="add-worker-message"></p>
+        </section>
+
+        <section id="list-workers">
+            <h2>Workers</h2>
+            <button id="refresh-workers">Refresh Workers</button>
+            <div id="workers-list">
+                <!-- Workers will be listed here -->
+            </div>
+            <p id="list-workers-message"></p>
+        </section>
+
+        <section id="record-time-entry">
+            <h2>Record Time Entry</h2>
+            <form id="record-time-entry-form">
+                <input type="text" id="time-entry-worker-id" placeholder="Worker ID" required>
+                <input type="date" id="time-entry-date" required>
+                <input type="time" id="time-entry-start-time" placeholder="Start Time (HH:MM)" required>
+                <input type="time" id="time-entry-end-time" placeholder="End Time (HH:MM)" required>
+                <button type="submit">Record Time</button>
+            </form>
+            <p id="time-entry-message"></p>
+        </section>
+
+        <section id="record-leave">
+            <h2>Record Leave</h2>
+            <form id="record-leave-form">
+                <input type="text" id="leave-worker-id" placeholder="Worker ID" required>
+                <select id="leave-type" required>
+                    <option value="">Select Leave Type</option>
+                    <option value="annual">Annual</option>
+                    <option value="sick">Sick</option>
+                    <option value="family">Family</option>
+                </select>
+                <input type="date" id="leave-start-date" required>
+                <input type="date" id="leave-end-date" required>
+                <input type="number" id="leave-days-taken" placeholder="Days Taken" step="0.5" required>
+                <button type="submit">Record Leave</button>
+            </form>
+            <p id="leave-message"></p>
+        </section>
+
+        <section id="record-loan">
+            <h2>Record Loan</h2>
+            <form id="record-loan-form">
+                <input type="text" id="loan-worker-id" placeholder="Worker ID" required>
+                <input type="number" id="loan-amount" placeholder="Loan Amount" step="0.01" required>
+                <input type="date" id="loan-start-date" required>
+                <input type="text" id="repayment-schedule" placeholder="Repayment Schedule (YYYY-MM-DD:AMT,...)" required>
+                <button type="submit">Record Loan</button>
+            </form>
+            <p id="loan-message"></p>
+        </section>
+
+        <section id="generate-payslip">
+            <h2>Generate Payslip</h2>
+            <form id="generate-payslip-form">
+                <input type="text" id="payslip-worker-id" placeholder="Worker ID" required>
+                <input type="month" id="payslip-month" required>
+                <button type="submit">Generate Payslip</button>
+            </form>
+            <pre id="payslip-output"></pre>
+            <p id="payslip-message"></p>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

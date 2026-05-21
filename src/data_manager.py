@@ -2,7 +2,7 @@ import json
 import os
 import datetime
 from typing import List, Dict, Any
-from src.models import Worker, TimeEntry, Leave, Loan, Payslip
+from models import Worker, TimeEntry, Leave, Loan, Payslip
 
 class CustomEncoder(json.JSONEncoder):
     def default(self, obj):
