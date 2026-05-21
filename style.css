@@ -1,40 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF; /* White background */
     color: #333;
 }
 
 .container {
     max-width: 900px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #FFFFFF; /* White background */
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #0056b3;
+    color: #007BFF; /* Blue */
     margin-bottom: 30px;
+    font-size: 2.5em;
 }
 
 h2 {
-    color: #0056b3;
-    border-bottom: 2px solid #eee;
+    color: #007BFF; /* Blue */
+    border-bottom: 2px solid #E0E0E0;
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 section {
     margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #e7e7e7;
+    padding: 25px;
+    background-color: #F8F9FA; /* Off-white for sections */
+    border-radius: 8px;
+    border: 1px solid #D0D0D0;
 }
 
 form {
@@ -51,68 +53,76 @@ form input[type="time"],
 form input[type="month"],
 form select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 form button {
     grid-column: span 2;
     padding: 12px 20px;
-    background-color: #007bff;
+    background-color: #007BFF; /* Blue */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker Blue */
+    transform: translateY(-2px);
 }
 
 #list-workers button {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #DC3545; /* Red for refresh, for contrast */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1em;
     margin-bottom: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #list-workers button:hover {
-    background-color: #218838;
+    background-color: #C82333; /* Darker Red */
+    transform: translateY(-2px);
 }
 
 #workers-list div {
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 4px;
+    background-color: #E9F5FF; /* Light blue background for worker items */
+    border: 1px solid #B0D8FF;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #333;
 }
 
 .message.success {
-    color: #28a745;
+    color: #28A745; /* Green for success, keep as it's standard */
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .message.error {
-    color: #dc3545;
+    color: #DC3545; /* Red for error */
     font-weight: bold;
+    margin-top: 10px;
 }
 
 pre {
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
+    background-color: #F8F9FA; /* Off-white for code blocks */
+    border: 1px solid #CED4DA;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 5px;
     white-space: pre-wrap;
     word-break: break-all;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.5;
 }

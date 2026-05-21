@@ -11,7 +11,7 @@ A South African labour-law-compliant payroll and time-tracking app for household
 - [Technologies Used](#technologies-used)
 
 ## Description
-This project is a Python-based application designed to manage payroll and time tracking for domestic workers and gardeners in South Africa, ensuring compliance with local labour laws. It provides functionalities for managing worker data, time entries, leaves, and loans, and calculates salaries based on these inputs.
+This project is a Python-based application designed to manage payroll and time tracking for domestic workers and gardeners in South Africa, ensuring compliance with local labour laws. It provides functionalities for managing worker data, time entries, leaves, and loans, and calculates salaries based on these inputs. The application now features a user-friendly web interface with a modern blue, white, and red color scheme.
 
 ## Features
 - Worker management (add, update, view)

@@ -1,0 +1,18 @@
+[
+    {
+        "worker_id": "1",
+        "name": "Andre",
+        "hourly_rate": 28.79,
+        "time_entries": [
+            {
+                "worker_id": "1",
+                "date": "2026-05-17",
+                "start_time": "08:07:00",
+                "end_time": "10:56:00"
+            }
+        ],
+        "leave_days": [],
+        "loans": [],
+        "accrued_annual_leave_days": 0.058823529411764705
+    }
+]
