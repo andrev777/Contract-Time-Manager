@@ -1,0 +1,16 @@
+[
+    {
+        "worker_id": "W001",
+        "leave_type": "annual",
+        "start_date": "2026-04-06",
+        "end_date": "2026-04-06",
+        "days_taken": 1.0
+    },
+    {
+        "worker_id": "W001",
+        "leave_type": "sick",
+        "start_date": "2026-04-07",
+        "end_date": "2026-04-07",
+        "days_taken": 1.0
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "worker_id": "W001",
+        "date": "2026-04-01",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-02",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-03",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-04",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-05",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-08",
+        "start_time": "08:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-04-09",
+        "start_time": "08:00:00",
+        "end_time": "18:00:00"
+    },
+    {
+        "worker_id": "W002",
+        "date": "2026-04-01",
+        "start_time": "09:00:00",
+        "end_time": "17:00:00"
+    },
+    {
+        "worker_id": "W001",
+        "date": "2026-05-01",
+        "start_time": "08:00:00",
+        "end_time": "17:00:00"
+    }
+]

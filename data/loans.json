@@ -1,0 +1,18 @@
+[
+    {
+        "worker_id": "W001",
+        "loan_amount": 200.0,
+        "start_date": "2026-04-15",
+        "repayment_schedule": [
+            [
+                "2026-05-31",
+                100.0
+            ],
+            [
+                "2026-06-30",
+                100.0
+            ]
+        ],
+        "repaid_amount": 0.0
+    }
+]

@@ -1,0 +1,108 @@
+[
+    {
+        "worker_id": "W001",
+        "name": "Alice Smith",
+        "hourly_rate": 35.0,
+        "time_entries": [
+            {
+                "worker_id": "W001",
+                "date": "2026-04-01",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-02",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-03",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-04",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-05",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-08",
+                "start_time": "08:00:00",
+                "end_time": "18:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-04-09",
+                "start_time": "08:00:00",
+                "end_time": "18:00:00"
+            },
+            {
+                "worker_id": "W001",
+                "date": "2026-05-01",
+                "start_time": "08:00:00",
+                "end_time": "17:00:00"
+            }
+        ],
+        "leave_days": [
+            {
+                "worker_id": "W001",
+                "leave_type": "annual",
+                "start_date": "2026-04-06",
+                "end_date": "2026-04-06",
+                "days_taken": 1.0
+            },
+            {
+                "worker_id": "W001",
+                "leave_type": "sick",
+                "start_date": "2026-04-07",
+                "end_date": "2026-04-07",
+                "days_taken": 1.0
+            }
+        ],
+        "loans": [
+            {
+                "worker_id": "W001",
+                "loan_amount": 200.0,
+                "start_date": "2026-04-15",
+                "repayment_schedule": [
+                    [
+                        "2026-05-31",
+                        100.0
+                    ],
+                    [
+                        "2026-06-30",
+                        100.0
+                    ]
+                ],
+                "repaid_amount": 0.0
+            }
+        ],
+        "accrued_annual_leave_days": 0.4705882352941177
+    },
+    {
+        "worker_id": "W002",
+        "name": "Bob Johnson",
+        "hourly_rate": 30.0,
+        "time_entries": [
+            {
+                "worker_id": "W002",
+                "date": "2026-04-01",
+                "start_time": "09:00:00",
+                "end_time": "17:00:00"
+            }
+        ],
+        "leave_days": [],
+        "loans": [],
+        "accrued_annual_leave_days": 0.058823529411764705
+    }
+]
